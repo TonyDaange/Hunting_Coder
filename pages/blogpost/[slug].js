@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 const slug = () => {
     const router = useRouter()
-    const {slug}  = router.query;
+    const { slug } = router.query;
     return (
         <div>slug: {slug}</div>
     )

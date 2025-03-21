@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -15,22 +16,10 @@ export default function Home() {
       {/* <Script src='/script1.js' strategy="lazyOnload"></Script> */}
       <nav className={styles.nav}>
         <ul>
-          <li>
-            Home
-            {/* <a href="/">Home</a> */}
-          </li>
-          <li>
-            Blog
-            {/* <a href="/blog">Blog</a> */}
-          </li>
-          <li>
-            About
-            {/* <a href="/about">About</a> */}
-          </li>
-          <li>
-            Contact
-            {/* <a href="/contact">Contact</a> */}
-          </li>
+          <Link href="/"><li>Home</li></Link>
+          <Link href="/blog"><li>Blog</li></Link>
+          <Link href="/about"><li>About</li></Link>
+          <Link href="/contact"><li>Contact</li></Link>
         </ul>
       </nav>
       <main className={styles.main}>
