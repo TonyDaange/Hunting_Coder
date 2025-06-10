@@ -1,24 +1,38 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Dummy from '../components/dummy.js'
-// import Image from 'next/image'
+import Image from 'next/image'
 // import Script from 'next/script'
-// import styles1 from '../styles/Home1.module.css'
-// import styles2 from '../styles/Home2.module.css'
 
 export default function Home() {
-
+  // ·
+  // │
+  // │
+  // │
+  // ╰────
+  // ✓
+  // ×
+  // ╭──
+  // │
+  // │ 
   // console.log(styles)
   return (
     <div className={styles.container}>
-      {/* <Dummy /> */}
       <style jsx>
         {`
-        .Span{
-          color: blue;
-          font-size: 100px;
-          }
+        .myImg{
+          border-radius: 50%;
+        }
+        h2{
+          font-size: 40px;
+        }
+        h3{
+          font-size: 30px;
+        }
+        // .Span{
+        //   color: blue;
+        //   font-size: 100px;
+        //   }
           `}
       </style>
       <Head>
@@ -38,8 +52,10 @@ export default function Home() {
       </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <span className='Span dummy'>Hunting Coder</span>
+          <span className='dummy'>Hunting Coder</span>
         </h1>
+        <div className={styles.myImgWrap}></div>
+        <Image className={styles.myImg} src="/homeimg.avif" alt="" width={310} height={207} />
 
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
