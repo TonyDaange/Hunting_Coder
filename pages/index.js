@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 // import Script from 'next/script'
@@ -42,27 +41,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Script src='/script1.js' strategy="lazyOnload"></Script> */}
-      <nav className={styles.nav}>
-        <ul>
-          <Link href="/"><li>Home</li></Link>
-          <Link href="/blog"><li>Blog</li></Link>
-          <Link href="/about"><li>About</li></Link>
-          <Link href="/contact"><li>Contact</li></Link>
-        </ul>
-      </nav>
+      
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span className='dummy'>Hunting Coder</span>
         </h1>
         <div className={styles.myImgWrap}></div>
-        <Image className={styles.myImg} src="/homeimg.avif" alt="" width={310} height={207} />
+        <Image className={styles.myImg} src="/homeimg.avif" width={310} height={207} />
 
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
         </p>
         {/* <div className={`${styles1.con} ${styles2.con}`}> */}
         <div>
-          <h2>Popular blogs</h2>
+          <h2>Latest blogs</h2>
           <div className="blogItem">
             <h3>How to Learn JavaScript in 2025?</h3>
             <p>JavaScript is the language used to logic for the web</p>
