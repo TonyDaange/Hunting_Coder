@@ -50,7 +50,7 @@ export default function Home() {
           <span className='dummy'>Hunting Coder</span>
         </h1>
         <div className={styles.myImgWrap}></div>
-        <Image className={styles.myImg} src="/homeimg.avif" width={310} height={207} />
+        <Image className={styles.myImg} src="/homeimg.avif" alt='' width={414} height={276} priority/>
 
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
