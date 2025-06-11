@@ -28,6 +28,9 @@ export default function Home() {
         h3{
           font-size: 30px;
         }
+        .dummy{
+          margin: 4rem;  
+        }
         // .Span{
         //   color: blue;
         //   font-size: 100px;
@@ -41,7 +44,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Script src='/script1.js' strategy="lazyOnload"></Script> */}
-      
+
       <main className={styles.main}>
         <h1 className={styles.title}>
           <span className='dummy'>Hunting Coder</span>
